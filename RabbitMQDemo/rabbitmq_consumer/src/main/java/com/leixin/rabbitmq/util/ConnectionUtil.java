@@ -10,15 +10,15 @@ public class ConnectionUtil {
         //创建连接工厂
         ConnectionFactory connectionFactory = new ConnectionFactory();
         //设置主机
-        connectionFactory.setHost("192.168.122.131");
+        connectionFactory.setHost("");
         //设置端口号
         connectionFactory.setPort(5672);
         //设置虚拟主机
         connectionFactory.setVirtualHost("/");
         //设置用户名
-        connectionFactory.setUsername("admin");
+        connectionFactory.setUsername("");
         //设置密码
-        connectionFactory.setPassword("123456");
+        connectionFactory.setPassword("");
         //创建连接
         Connection connection = connectionFactory.newConnection();
         return  connection;
